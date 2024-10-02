@@ -9,9 +9,9 @@
         <relativePath/>
     </parent>
     <groupId>com.nisum</groupId>
-    <artifactId>vibecart-discover-registry</artifactId>
+    <artifactId>vibecart-discover-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>vibecart-discover-registry</name>
+    <name>Vibecart Discover Registry Service</name>
     <description>Vibecart Discovery Registry</description>
     <url/>
     <licenses>
@@ -31,25 +31,26 @@
         <spring-cloud.version>2020.0.5</spring-cloud.version>
     </properties>
     <dependencies>
+
+        <!-- Spring Boot Starter for building web applications, including RESTful services using Spring MVC. -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <!-- Spring Cloud Starter for Netflix Eureka Server-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
 
+        <!-- Spring Boot Starter for testing. This includes libraries for unit testing, mocking, and other testing utilities. -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <scope>test</scope>
-        </dependency>
+
     </dependencies>
     <dependencyManagement>
         <dependencies>
